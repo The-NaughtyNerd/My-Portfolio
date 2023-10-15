@@ -1,0 +1,19 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as v;
+
+.service {
+  // margin-bottom: 2.8rem;
+
+  @include mix.respond(sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &:nth-child(even) {
+    .service__texts {
+      order: -1;
+    }
+  }
+}
