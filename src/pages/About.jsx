@@ -1,6 +1,6 @@
 import Sidebar from '../components/Sidebar';
-import { services } from '../constants';
-import Service from '../components/Service';
+import Skill from '../components/Skill';
+import { skills } from '../constants';
 
 const About = () => {
   return (
@@ -8,8 +8,16 @@ const About = () => {
       <div className="animate__animated animate__fadeInUp">
         <Sidebar />
         <section className="section">
-          <div className="mb-12">
+          <div className=" section__header">
             <h1 className="heading--4">About Me</h1>
+
+            <h2 className="font-bold uppercase opacity-20 tracking-widest font-clashDisplay absolute text-[4.8rem] md:text-[10rem] -z-10 py-20 lg:py-16">
+              {/* <h1 className="text-7xl lg:text-9xl text-white font-bold opacity-10 tracking-widest lg:py-16 font-openSans absolute text-[10rem] -z-50"> */}
+              Resume
+            </h2>
+          </div>
+
+          <div className="mb-12 ">
             <h2 className="">I'm David Ade, Frontend Developer</h2>
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -19,26 +27,19 @@ const About = () => {
             </p>
           </div>
 
-          <div className="space-y-8">
-            <div className="heading--3">What I Do?</div>
+          <div className="">
+            <h3 className="heading--3">Skills</h3>
 
-            {services.map((item) => (
-              <Service
-                key={item.key}
-                img={item.img}
-                heading={item.service}
-                info={item.info}
-              />
-              // <div key={item.id} className="service">
-              //   <div className="w-1/2 service__img">
-              //     <img src={item.img} alt="" className="" />
-              //   </div>
-              //   <div className="service__texts">
-              //     <h3 className="[">{item.service}</h3>
-              //     <p className="">{item.info}</p>
-              //   </div>
-              // </div>
-            ))}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 ">
+              {skills.map((skill) => (
+                <Skill
+                  key={skill.id}
+                  logo={skill.img}
+                  rate={skill.accuracy}
+                  name={skill.name}
+                />
+              ))}
+            </div>
           </div>
         </section>
       </div>

@@ -25,14 +25,14 @@ const Navbar = () => {
                 active === route.linkName
                   ? ' bg-secondaryColor'
                   : ' item bg-textSecondary'
-              } item `}
+              } item shadow-lg`}
             >
               {/* <li key={route.id} className="item" > */}
               <Link to={route.link} onClick={() => setActive(route.linkName)}>
                 <route.icon
                   className={`${
                     active === route.linkName ? 'text-textSecondary' : 'icon'
-                  } icon`}
+                  } icon drop-shadow-2xl`}
                 />
               </Link>
             </li>

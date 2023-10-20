@@ -1,10 +1,15 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as v;
+
 .btn {
-  padding: 1rem 2rem;
+  padding: 1rem 1.6rem;
   border: none;
   border-radius: 8rem;
 
   font-weight: 600;
+  font-size: 1.2rem;
   text-align: center;
+  transition: all 0.2s;
 
   // background-color: #eaeaed;
 
@@ -13,7 +18,7 @@
     border: 1px solid #fff4cc;
 
     &:hover {
-      background-color: #fff4cc;
+      background-color: #ee9322;
       border: 1px solid #ffe998;
     }
   }
@@ -23,7 +28,7 @@
     border: 1px solid #ffe998;
 
     &:hover {
-      background-color: #ffe998;
+      background-color: #ee9322;
     }
   }
 }

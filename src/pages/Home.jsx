@@ -21,7 +21,7 @@ const Home = () => {
       <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:h-full pt-[2.8rem] lg:pt-0 ">
         <div className="w-full lg:w-[40%] px-8 lg:pl-[5.2rem] animate__animated animate__fadeInLeft">
           <div className="flex flex-col gap-4 py-12">
-            <p className="heading--2">
+            <div className="heading--2">
               <Typewriter
                 options={{
                   autoStart: true,
@@ -30,7 +30,7 @@ const Home = () => {
                   strings: ['Holla!', 'Hello!', 'Bonjour!', 'Hi!'],
                 }}
               />
-            </p>
+            </div>
             <h1 className="heading--3 ">I am David</h1>
             <p className="heading--1 uppercase ">
               Frontend developer / Writer

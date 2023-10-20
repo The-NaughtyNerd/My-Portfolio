@@ -2,18 +2,56 @@
 @use '../abstracts/variables' as v;
 
 .service {
-  // margin-bottom: 2.8rem;
+  margin-bottom: 2.8rem;
+
+  // background-color: #fff4cc;
+
+  border: 2px solid #ffe998;
+  border-radius: 3.6rem;
+
+  &:hover {
+    transform: scale(1.1) translateZ(0);
+  }
 
   @include mix.respond(sm) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    // gap: 2rem;
     align-items: center;
+    // height: 45rem;
   }
 
   &:nth-child(even) {
     .service__texts {
       order: -1;
     }
+  }
+
+  &__img {
+    background-color: #ffe998;
+    border-radius: 3.6rem;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+
+    @include mix.respond(sm) {
+      height: 35rem;
+    }
+  }
+
+  &__texts {
+    padding: 2.4rem;
+    // font-size: 1.2rem;
+
+    @include mix.respond(sm) {
+      // background: transparent;
+      padding: 5rem;
+      // width: 100%;
+      // height: 100%;
+    }
+
+    // p {
+    //   -webkit-line-clamp: 5;
+    // }
   }
 }

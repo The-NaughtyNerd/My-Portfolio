@@ -4,7 +4,7 @@ import gitLogo from './git.png';
 import javascriptLogo from './javascript.png';
 import cssLogo from './css.png';
 import tailwindLogo from './tailwind.png';
-import reactjsLogo from './reactjs.png';
+import reactjsLogo from './react.png';
 import reduxLogo from './redux.png';
 import sassLogo from './sass.png';
 import illustration1 from './illustration--wall-1-removebg-preview.png';
