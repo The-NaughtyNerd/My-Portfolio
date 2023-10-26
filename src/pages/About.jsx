@@ -30,7 +30,7 @@ const About = () => {
           <div className="">
             <h3 className="heading--3">Skills</h3>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 ">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-12 ">
               {skills.map((skill) => (
                 <Skill
                   key={skill.id}

@@ -24,6 +24,7 @@
     font-weight: 600;
     // text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
 
     @include mix.respond(sm) {
       font-size: 5.2rem;

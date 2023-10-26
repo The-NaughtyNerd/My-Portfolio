@@ -1,6 +1,5 @@
-import { FaTelegramPlane, FaLaptopCode, FaCode, FaBlog } from 'react-icons/fa';
-import { GrServices } from 'react-icons/gr';
-import { BsPersonFill } from 'react-icons/bs';
+import { FaTelegramPlane, FaLaptopCode, FaBlog } from 'react-icons/fa';
+import { BsPersonFill, BsPeopleFill } from 'react-icons/bs';
 import { AiFillHome } from 'react-icons/ai';
 import { MdBusinessCenter } from 'react-icons/md';
 import { GiSkills } from 'react-icons/gi';
@@ -22,10 +21,17 @@ import {
   tailwindLogo,
   figmaLogo,
   gitLogo,
+  auricle,
 } from '../assets';
 
 export const navigation = [
-  { id: 1, link: '/', icon: AiFillHome, linkName: 'Home', current: true },
+  {
+    id: 1,
+    link: '/',
+    icon: AiFillHome,
+    linkName: 'Home',
+    current: true,
+  },
   {
     id: 2,
     link: '/about',
@@ -49,20 +55,25 @@ export const navigation = [
   },
   {
     id: 5,
+    link: '/testimonials',
+    icon: BsPeopleFill,
+    linkName: 'Testimonials',
+    current: false,
+  },
+  {
+    id: 6,
     link: '/blog',
     icon: FaBlog,
     linkName: 'Blog',
     current: false,
   },
   {
-    id: 6,
+    id: 7,
     link: '/contact',
     icon: FaTelegramPlane,
     linkName: 'Contact',
     current: false,
   },
-  // { id: 6, link: '/team', linkName: 'Team', current: false },
-  // { id: 8, link: '/service', linkName: 'Service' },
 ];
 
 export const services = [
@@ -143,5 +154,40 @@ export const skills = [
     name: 'Git',
     img: gitLogo,
     accuracy: '80',
+  },
+];
+
+export const projects = [
+  {
+    id: 'project-1',
+    title: 'GetLinked',
+    screenshot: auricle,
+    tools: 'TailwindCSS, React',
+    preview: '',
+    purpose: 'Challenge',
+  },
+  {
+    id: 'project-2',
+    title: 'Task Tracker',
+    screenshot: auricle,
+    tools: 'React, CSS',
+    preview: '',
+    purpose: 'Learning',
+  },
+  {
+    id: 'project-3',
+    title: 'Rest Country Generator',
+    screenshot: auricle,
+    tools: 'React, SASS',
+    preview: '',
+    purpose: 'Learning',
+  },
+  {
+    id: 'project-4',
+    title: 'Auricle',
+    screenshot: auricle,
+    tools: 'React, SASS, TailwindCSS, AnimateCSS',
+    preview: '',
+    purpose: 'Learning',
   },
 ];

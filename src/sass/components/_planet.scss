@@ -1,0 +1,65 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as v;
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  // bottom: 50%;
+  transform: translate(50%, -50%);
+
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  // border: 2px solid v.$secondaryColor;
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  // background-color: #fff;
+  border: 2px solid v.$primaryColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moon {
+  position: absolute;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  // background-color: v.$secondaryColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-1 {
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  &-2 {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  &-3 {
+    top: 50%;
+    right: 100%;
+    transform: translate(50%, -50%);
+  }
+  &-4 {
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}

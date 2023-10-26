@@ -31,6 +31,7 @@ import designer from './web-design.png';
 import writer from './content-writing.png';
 import freelancer from './freelancing.png';
 import ongoing from './ongoing-progress.png';
+import auricle from './projectsImages/Auricle Website - auricle.vercel.app.png';
 
 export {
   figmaLogo,
@@ -65,4 +66,5 @@ export {
   writer,
   freelancer,
   ongoing,
+  auricle,
 };

@@ -24,10 +24,11 @@ const Skill = ({ logo, rate, name }) => {
                 pathColor: '#ee9322',
                 textColor: '#ee9322',
                 trailColor: '#ffe998',
-                pathTransitionDuration: 0.5,
+                backgroundColor: '#fff',
+                // pathTransitionDuration: 0.5,
               })}
             >
-              <img src={logo} alt="" className="w-[50%]" />
+              <img src={logo} alt="" className="w-[40%]" loading="lazy" />
 
               <p className="font-medium text-[2rem]">{name}</p>
               <p className="font-semibold text-[1.8rem]">

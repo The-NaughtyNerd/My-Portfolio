@@ -14,11 +14,12 @@ import {
 } from '../assets';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import Typewriter from 'typewriter-effect';
+import MyPlanet from '../components/Planet';
 
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:h-full pt-[2.8rem] lg:pt-0 ">
+      <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:h-screen pt-[2.8rem] lg:pt-0 ">
         <div className="w-full lg:w-[40%] px-8 lg:pl-[5.2rem] animate__animated animate__fadeInLeft">
           <div className="flex flex-col gap-4 py-12">
             <div className="heading--2">
@@ -63,14 +64,22 @@ const Home = () => {
         </div>
 
         <div className="w-full h-[75vh] lg:h-full lg:w-[60%] animate__animated animate__fadeInRight relative">
+          {/* <div className="absolute"> */}
+          <MyPlanet />
+          {/* </div> */}
           <img
             src={illustrationBg}
             alt=""
             className="w-full h-full object-cover"
           />
-          {/* <div className="absolute w-full h-full top-0 -z-50">
-            <img src={codeWorld} alt="" className="w-full h-full" />
-          </div> */}
+        </div>
+
+        {/* <div className="w-full h-[75vh] lg:h-full lg:w-[60%] animate__animated animate__fadeInRight relative">
+          <img
+            src={illustrationBg}
+            alt=""
+            className="w-full h-full object-cover"
+          />
           <div className="bg-primaryColor border border-solid border-secondaryColor rounded-full p-2 absolute w-[6rem] h-[6rem] top-[40%] left-[5%] -z-40">
             <img
               src={javascriptLogo}
@@ -105,7 +114,7 @@ const Home = () => {
           <div className="absolute w-full h-full top-0 -z-50 opacity-50">
             <img src={sphere2} alt="" className="w-full h-full object-cover" />
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="absolute text-[5.2rem] text-[#ffe998] right-[2.5%] bottom-10  animate-bounce">
           <HiOutlineArrowNarrowDown />

@@ -2,17 +2,20 @@ import { navigation } from '../constants';
 import { Link } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiMenuAlt3 } from 'react-icons/hi';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { nerdLogo } from '../assets';
+
+import { Context } from '../Contexts/Context';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState('');
+  // const [active, setActive] = useState('');
+  const { active, setActive } = useContext(Context);
 
   return (
     <>
       <nav className="navbar">
-        <div className="logo  w-[7.2rem] h-[3.2rem] block lg:hidden ">
+        <div className="logo  w-[8.4rem] h-[3.6rem] block lg:hidden ">
           <img src={nerdLogo} alt="" className="w-full h-full object-cover" />
         </div>
 
@@ -27,7 +30,6 @@ const Navbar = () => {
                   : ' item bg-textSecondary'
               } item shadow-lg`}
             >
-              {/* <li key={route.id} className="item" > */}
               <Link to={route.link} onClick={() => setActive(route.linkName)}>
                 <route.icon
                   className={`${
@@ -43,12 +45,12 @@ const Navbar = () => {
           {toggle ? (
             <AiOutlineClose
               onClick={() => setToggle(!toggle)}
-              className="h-12 w-12  animate__animated animate__fadeIn"
+              className="h-16 w-16  animate__animated animate__fadeIn"
             />
           ) : (
             <HiMenuAlt3
               onClick={() => setToggle(!toggle)}
-              className="h-12 w-12  animate__animated animate__fadeIn"
+              className="h-16 w-16  animate__animated animate__fadeIn"
             />
           )}
         </div>
